@@ -1,72 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="css\index.css">
-    <link rel="stylesheet" href="css\footer.css">
-    <script src=""></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css\index.css">
+  <link rel="stylesheet" href="css\nav.css">
+  <link rel="stylesheet" href="css\footer.css">
+  <script src="javascript\script.js"></script>
 </head>
-<body>
+<body style="background-color: whitesmoke;">
+  <nav>
+    <ul class="menu">
+        <li class="logo"><a href="#"><img src="images\tracom-logo-blue.svg" alt="tracom logo" class="logog"></a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item has-submenu">
+            <a tabindex="0">Services</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">Design</a></li>
+                <li class="subitem"><a href="#">Development</a></li>
+                <li class="subitem"><a href="#">SEO</a></li>
+                <li class="subitem"><a href="#">Copywriting</a></li>
+            </ul>
+        </li>
+        <li class="item has-submenu">
+            <a tabindex="0">Plans</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">Freelancer</a></li>
+                <li class="subitem"><a href="#">Startup</a></li>
+                <li class="subitem"><a href="#">Enterprise</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">Blog</a></li>
+        <li class="item"><a href="#">Contact</a>
+        </li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button secondary"><a href="#">Sign Up</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+</nav>
+<div class="welcome">
+  <img src="images\undraw_editable_dywm.svg" alt="" class="dym-img" style="height: 50%; width: 50%;">
+  <h1>Welcome All!</h1>
+  <p>Booking meeting has been made easier with officePlanner</p>
+  <button>Learn More</button>
+  <a href="">get the fuck out of here</a>
+</div>
+  <footer>
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="whitesmoke" />
+      </g>
+      </svg>
+      </div>
+    <!-- Footer main -->
+    <section class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">About</h2>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Resources</h2>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">eBooks</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Contact</h2>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter to get our latest news.</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
    
-
-        <footer>
-            <section class="ft-main">
-              <div class="ft-main-item">
-                <h2 class="ft-title">About</h2>
-                <ul>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Customers</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-              </div>
-              <div class="ft-main-item">
-                <h2 class="ft-title">Resources</h2>
-                <ul>
-                  <li><a href="#">Docs</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">eBooks</a></li>
-                  <li><a href="#">Webinars</a></li>
-                </ul>
-              </div>
-              <div class="ft-main-item">
-                <h2 class="ft-title">Contact</h2>
-                <ul>
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">Sales</a></li>
-                  <li><a href="#">Advertise</a></li>
-                </ul>
-              </div>
-              <div class="ft-main-item">
-                <h2 class="ft-title">Stay Updated</h2>
-                <p>Subscribe to our newsletter to get our latest news.</p>
-                <form>
-                  <input type="email" name="email" placeholder="Enter email address">
-                  <input type="submit" value="Subscribe">
-                </form>
-              </div>
-            </section>
-            <section class="ft-social">
-              <ul class="ft-social-list">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-              </ul>
-            </section>
-            <section class="ft-legal">
-              <ul class="ft-legal-list">
-                <li><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li>&copy; 2019 Copyright Nowrap Inc.</li>
-              </ul>
-            </section>
-          </footer>
+    <!-- Footer social -->
+    <section class="ft-social">
+      <ul class="ft-social-list">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </section>
+   
+    <!-- Footer legal -->
+    <section class="ft-legal">
+      <ul class="ft-legal-list">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy; 2019 Copyright Nowrap Inc.</li>
+      </ul>
+    </section>
+  </footer>
 </body>
 </html>
